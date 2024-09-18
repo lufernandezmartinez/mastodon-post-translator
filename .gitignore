@@ -1,6 +1,3 @@
-#Ignore folders
 /.venv
 /.venv/*
-/venv
-/venv/*
-token.txt
+settings_example.json

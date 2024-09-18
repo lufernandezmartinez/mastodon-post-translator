@@ -1,49 +1,40 @@
 # Mastodon post translator
-WIP
 
 ## Description
 
-A bot that translates your Mastodon.social posts to the language you've selected and reposts them to the same/another account.
+A bot that translates your Mastodon.social posts to the language you've selected and reposts them to the same/another account. It gets your last post every minute.
 
 ## Getting Started
 
 ### Dependencies
 
 * Mastodon.py
-* GoogleTrans
+* DeepTranslator
+* BeautifulSoup4
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* Install required packages
+```
+pip install Mastodon.py deep-translator beautifulsoup4
+```
+
+* Modify the settings.json with your account_id, your token and the API URL.
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* Start main.py 
 
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
 
 ## Authors
 
 Luis Fernández Martinez 
 [@lufer](https://mastodon.social/@lufer)
+[@lufer_EN](https:/mastodon.social/@luferEN)
 
-## Version History
+## EXTRA
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+PLEASE NOTE THAT THIS IS A 40-LINE BOT THAT I DID IN A COUPLE HOURS.
 
 ## License
 
