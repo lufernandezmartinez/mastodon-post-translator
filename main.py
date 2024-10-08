@@ -45,10 +45,13 @@ def translate_and_publish(latest_toot,app_settings):
             mastodon.status_post(plain_text, visibility='public')
     except Exception as e:
         return None
-try:
-    with open('settings.json', 'r') as file:
-        app_settings = json.load(file)
-    mastodon = initialize_mastodon(app_settings)
-    monitor_new_toots(mastodon,app_settings,int(app_settings["account_id"]),check_interval=60)
-except Exception as e:
-    raise e
+def main():
+    while True:
+        try:
+            with open('settings.json', 'r') as file:
+                app_settings = json.load(file)
+            mastodon = initialize_mastodon(app_settings)
+            monitor_new_toots(mastodon,app_settings,int(app_settings["account_id"]),check_interval=60)
+        except Exception as e:
+            raise e
+main()
