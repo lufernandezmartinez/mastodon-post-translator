@@ -52,6 +52,4 @@ def main():
                 app_settings = json.load(file)
             mastodon = initialize_mastodon(app_settings)
             monitor_new_toots(mastodon,app_settings,int(app_settings["account_id"]),check_interval=60)
-        except Exception as e:
-            raise e
-main()
+        except Exception as e:/home/lufernandez/Desktop/Clase/EIE/EIE_T1_A1_Luis_Fernandez.pdf
